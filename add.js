@@ -1,4 +1,3 @@
-
-function solve(){
-    kjkjkj
+function solv(){
+    
 }
