@@ -22,7 +22,7 @@ import './App.css';
 
 const Register = lazy(() => import('./components/Register/Register'));
 
-
+// main 
 
 function App() {
 
