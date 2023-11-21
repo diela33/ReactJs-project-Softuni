@@ -1,0 +1,123 @@
+#recipe-page {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 2px;
+    background: rgba(247, 187, 124, 0.8) !important;
+}
+
+.recipe-container input, textarea {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.recipe-container>h1 {
+    margin-top: 10px;
+    font-weight: 100px;
+    font-size: 75px;
+    text-align: center;
+    color: #3e547b;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+label,
+input, textarea {
+    display: block;
+    width: 50%;
+    border: none;
+    outline: none;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 37px;
+    color: #485771;
+    margin-top: 16px;
+    text-align: center;
+}
+
+
+
+input::placeholder {
+    color: rgba(115, 111, 111, 0.678);
+}
+
+.recipe-container {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 80px;
+    text-align: center;
+}
+
+textarea {
+    background: #fff6e8;
+    padding: 30px;
+    padding-left: 20px;
+    height: 65px;
+    margin-left: 680px!important;
+    font-size: 24px;
+    border-radius: 20px;
+    box-shadow: inset 3px 3px 3px #c0c2c5, inset -6px -6px 6px white;
+}
+
+
+.btn.submit {
+    margin-top: 40px;
+    background: #485771;
+    height: 50px;
+    border-radius: 20px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    font-size: 26px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 3px 3px 3px #cbced1, -6px -6px 6px rgb(218, 169, 121);
+    transition: 0.5s;
+}
+
+.btn.submit:hover {
+    color: white;
+    background-color: #6c818e;
+}
+
+.error {
+    color: rgb(167, 4, 4);
+    font-size: 1.8em;
+}
+
+.list-ingredients li {
+    list-style-type: custom-counter-style;
+    color: #485771;
+    font-size: 28px;
+}
+
+
+.recipe-container #preparation {
+    height: 180px !important;
+    padding: 10px 5px 120px 15px;
+    text-align: left;   
+    margin-left:900px!important;
+}
+
+#preparation::placeholder {
+    text-align: left;
+}
+
+.delete {
+    margin-left: 50px !important;
+    padding: 2px 20px !important;
+    font-size: 20px !important;
+    color: #303a41 !important;
+}
+
+.add {
+    padding: 2px 20px !important;
+    font-size: 25px !important;
+    color: #303a41 !important;
+}

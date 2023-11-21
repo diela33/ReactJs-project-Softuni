@@ -1,0 +1,101 @@
+/*===== dish-details =====*/
+
+#dish-details {
+    padding-bottom: 880px;
+    padding-top: 100px;
+    padding-left: 200px!important;
+    background-color: rgba(247, 187, 124, 0.8) !important;
+}
+
+#dish-details h3 {
+    text-align: center;
+    color: #485771;
+    font-size: 100px !important;
+    padding-bottom: 25px;
+}
+
+.list-recipes .details {
+    padding: 10px;
+    border-radius: 16px;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    box-shadow: 0 0 3px #c5c2a9;
+    -moz-box-shadow: 0 0 3px #c5c2a9;
+    -webkit-box-shadow: 0 0 3px #c5c2a9;
+    display: inline-block;
+}
+
+.list-recipes .details img {
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+}
+
+
+.create-comment textarea {
+    background: #fff6e8;
+    padding: 10px 800px 180px 10px;
+    height: 60px;
+    margin: 15px 8px !important;
+    font-size: 24px;
+    border-radius: 20px;
+    box-shadow: inset 3px 3px 3px #c0c2c5, inset -6px -6px 6px white;
+}
+
+.buttons .button, button.del-button{
+    margin: 40px;
+    background: #485771;
+    height: 20px;
+    border-radius: 20px;
+    color: white;
+    font-size: 36px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px #cbced1, -6px -6px 6px rgb(218, 169, 121);
+    transition: 0.5s;
+}
+.buttons .button {
+    padding: 10px 26px !important;
+}
+
+button.del-button {
+    padding:10px 20px 55px 20px!important;
+    margin-left: 0%;
+    box-shadow: 3px 3px 3px #cbced1, -6px -6px 6px rgb(218, 169, 121);
+    color: rgb(218, 215, 215);
+}
+
+
+.buttons, .button, button.del-button {
+    margin: 20px 20px 40px 20px;
+}
+
+.button:hover, .add-comment:hover, .del-button:hover{
+    text-decoration: none;
+    color: #1c1f25!important;
+    background: #7188ad;
+}
+
+.ingredients{
+    list-style: circle;
+    font-size: 100px;
+    color: black;
+}
+.add-comment{
+    margin:20px 180px!important;
+    width: 20%;
+    padding: 10px;
+    background: #485771;
+    border-radius: 20px;
+    color: rgb(218, 215, 215);
+    font-size: 36px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px #cbced1, -6px -6px 6px rgb(218, 169, 121);
+    transition: 0.5s;
+}
+
+
+.details label {
+    text-align: left;
+    text-decoration: underline;
+    font-size: 40px;
+}

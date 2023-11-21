@@ -1,0 +1,133 @@
+@import "navigation.css";
+@import "registration.css";
+@import "recipes.css";
+@import "create-recipe.css";
+@import "dish-details.css";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+body {
+  color: gray !important;
+  font-family: 'Nunito', sans-serif !important;
+  background-color: rgba(247, 187, 124, 0.8) !important;
+
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-caption {
+  background-color: rgba(247, 187, 124, 0.8) !important;
+  z-index: 11px;
+  color: grey !important;
+}
+
+.carousel-control-prev {
+  top: 70% !important;
+  margin-left: 20%;
+}
+
+.carousel-control-next {
+  top: 70% !important;
+  margin-right: 20%;
+}
+
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 50% !important;
+  left: 0% !important;
+  top: 25% !important;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: grey;
+  text-align: center;
+}
+
+.line {
+  padding: 4%;
+  border-left: 2px solid gray;
+  margin-left: 30%;
+  text-align: left;
+  color: grey;
+  font-size: 25px;
+}
+
+
+
+.main a {
+  background-color: rgba(241, 160, 73, 0.8) !important;
+  width: 30%;
+  height: 25%;
+}
+
+.fas {
+  color: white !important;
+}
+
+img {
+  width: 100%;
+}
+
+.second.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.text p {
+  font-size: 18px;
+}
+
+button {
+  margin-left: 40%;
+  background-color: rgba(215, 125, 29, 0.8);
+  color: white;
+  padding: 2% 9% 2% 9%;
+}
+
+.text {
+  border-left: 3px solid #D36F6F;
+  padding-left: 5%;
+  margin-left: 5%;
+}
+
+.photo {
+  display: inline-block;
+  position: relative;
+}
+
+.third button {
+  margin-left: 30%;
+}
+
+.third .line,
+.fourth .line {
+  border-left: 3px solid #D36F6F;
+  margin-left: 0 !important;
+}
+
+
+.footer {
+  height: 10.5rem;
+  width: 100%;
+  bottom: 0;
+}
+
+
+@media (max-width: 599px) and (min-width: 0px) {
+
+  .main .line {
+    margin-left: 0 !important;
+    padding: 0 !important;
+  }
+
+  .main h3 {
+    font-size: 14px !important;
+    line-height: 0.5 !important;
+  }
+}
