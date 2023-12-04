@@ -17,10 +17,10 @@ const Header = () => {
                                 <div className="parent">
                                     <div className="child">
                                     {user.email && <span>{user.email}</span>}
-                                        <li> <Link to="/">Home</Link>
-                                        </li>
-                                        <li> <Link to="/recipes">Recipes</Link>
-                                        </li>
+                                        <li> <Link to="/">Home</Link></li>
+                                        
+                                        <li> <Link to="/recipes">Recipes</Link>  </li>
+                                      
                                     </div>
                                     {user.email
                                         ? <div className="child">
