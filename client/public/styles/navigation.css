@@ -9,6 +9,7 @@ header,
 .social li {
     display: inline;
     padding-left: 5% !important;
+   
 }
 
 a {
@@ -51,8 +52,10 @@ header h1 {
     vertical-align: middle;
 }
 
+
 .social li a{
     font-size: 40px!important;
+    
 }
 
 .social li {
