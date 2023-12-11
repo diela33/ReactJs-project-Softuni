@@ -8,7 +8,7 @@ const Header = () => {
             <header>
                 <div className="col-6 col-sm-12 col-md-12 col-lg-12 col-xl-12 container">
                     <h1>All about cooking <br />
-                        Made for living and eating with love</h1>
+                        Made for living and eating with love..</h1>
                 </div>
                 <div className="row container header">
                     <div className="col-6 col-sm-10 col-md-10 col-lg-10 col-xl-10 container">
