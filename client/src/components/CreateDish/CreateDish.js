@@ -30,6 +30,15 @@ const CreateDish = () => {
     const [list, setList] = useState([]);
 
     const [value, setValue] = useState("");
+    const userId = localStorage.getItem('auth');
+    console.log(userId);
+    console.log(Object.entries(userId).length);
+    let isUser = false;
+
+    if(Object.entries(userId).length  > 2){
+       isUser = true;
+    } 
+    
     const addIngredient = (e) => {
         e.preventDefault();
         let tempArr = list;
@@ -46,13 +55,13 @@ const CreateDish = () => {
         setList(temp);
     };
 
-    console.log(fields);
-    console.log(list);
+
+
 
     const [errorMessage, setErrorMessage] = useState('')
 
     const validate = (value) => {
-        console.log(value)
+
 
         if (validator.isURL(value)) {
             setErrorMessage(null);
@@ -62,20 +71,35 @@ const CreateDish = () => {
     }
 
     const onSubmit = (e) => {
+
         e.preventDefault();
-       // const isValid = await form.validate(e);
-            const dishData = Object.fromEntries(new FormData(e.target));
-            dishData.ingredients = []
-            dishData.ingredients.push(list)
+        // const isValid = await form.validate(e);
+
+        // console.log(userId);
+
+        // if (userId !== {}) {
+
+        //     console.log('User ID:', userId);
+
+        // } else {
+        //     // console.log('User ID not found in local storage');
+        //     return;
+        // }
+
+        const dishData = Object.fromEntries(new FormData(e.target));
+        dishData.ingredients = []
+        dishData.ingredients.push(list)
+
+        // if (userId == {}) {
+        //     throw new Error('No User')
+        // }
 
 
-            console.log(dishData)
+        dishService.create(dishData)
+            .then(result => {
+                dishAdd(result)
+            });
 
-            dishService.create(dishData)
-                .then(result => {
-                    dishAdd(result)
-                });
-      
 
 
     };
@@ -167,13 +191,21 @@ const CreateDish = () => {
                                 ? errors.preparation
                                 : ""}
                         </label>
-                        <p>
+                        {isUser ? (<p>
+                            <input
+                                className="btn submit"
+                                type="submit"
+
+                                value="Add recipe"
+                            />
+                        </p>) : ("")}
+                        {/* <p>
                             <input
                                 className="btn submit"
                                 type="submit"
                                 value="Add recipe"
                             />
-                        </p>
+                        </p> */}
 
                     </div >
                 </form >
